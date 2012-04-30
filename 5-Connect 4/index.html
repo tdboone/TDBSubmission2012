@@ -1,0 +1,55 @@
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			text-align:center;
+		}
+		
+		canvas
+		{
+			border-style: solid;
+			border-color: #fcd51d;
+			border-width: 6px;
+		}
+		
+		#difficulty
+		{
+			text-align: left;
+			width: 100px;
+			height: 120px;
+			left: 5%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+<h1>
+Connect 4
+</h1>
+<p>
+Click on a column to drop a piece in that column.
+</p>
+<div id="difficulty">
+<h3>Difficulty</h3>
+	<input class="difficulty" type="radio" name="difficulty" value="easy"/>Easy<br/>
+	<input class="difficulty" type="radio" name="difficulty" value="medium" checked="true"/>Medium<br/>
+	<input class="difficulty" type="radio" name="difficulty" value="hard"/>Hard<br/>
+</div>
+<canvas id="gamecanvas" width="525" height="450">
+	<h2>Get a browser that supports canvas, you dummy!</h2>
+</canvas>
+		
+<div id="consolediv"><br/></div>
+<br/>
+<input id="resetbutton" type="button" value="Reset"/>
+<br/><br/>
+
+</body>
+
+<script type="text/javascript" src="connect4.js">
+
+</script>
+
+</html>
